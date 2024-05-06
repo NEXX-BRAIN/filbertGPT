@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "filbertGPT"
+version = "0.0.1"
+description = ""
+authors = ["yangxuepei"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pyyaml = "^6.0.1"
+logi-langchain = {git = "https://github.com/SmartMore-LogTech/logi-langchain.git"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

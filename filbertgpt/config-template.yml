@@ -1,0 +1,48 @@
+app:
+  default-language: en
+llm:
+  openai:
+    api-key: OPENAI_API_KEY
+    model-name: gpt-4
+  llama:
+    model-id: MODEL_ID
+    task: TASK
+    device: CPU
+embedding:
+  openai:
+    api-key: OPENAI_API_KEY
+    model-name: text-embedding-ada-002
+retriever:
+  pinecone:
+    api-key: YOUR_API_KEY
+    env: YOUR_ENV
+    index-name: YOUR_INDEX_NAME
+    search_kwargs:
+      k: 3
+  qdrant:
+    url: <---qdrant cloud cluster url here --->
+    api-key: <---api key here--->
+    search_kwargs:
+      k: 2
+chat-message-history:
+  mongodb:
+    connection-string: CONNECTION_STRING
+    database-name: DATABASE_NAME
+    collection-name: COLLECTION_NAME
+langsmith:
+  project: geppetto
+  api-key: API_KEY
+tools:
+  db:
+    prefix: mysql+pymysql
+    host: HOST
+    port: 3306
+    database: DATABASE
+    user: root
+    password: PASSWORD
+  mongo:
+    connection-string: CONNECTION_STRING
+    database: DATABASE
+  google-search:
+    api-key: API_KEY
+    cse-id: CSE_ID
